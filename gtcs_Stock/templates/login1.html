@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-4">IStock Login</a>
+            </div>
+              <br>
+              <br>
+            <h2><a class="ml-2" href="{{ url_for('loginasnew') }}">Login as New Company</a></h2>
+              <br>
+              <br>
+            <p class="article-content">For New Users </p>
+          </div>
+        </article>
+        <br>
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-4">IStock Login</a>
+            </div>
+              <br>
+              <br>
+            <h2><a class="article-title" href="{{ url_for('login') }}">Login as Existing Company</a></h2>
+              <br>
+              <br>
+            <p class="article-content">For Existing Users</p>
+          </div>
+        </article>
+        <script src="static/js/new.js"></script>
+{% endblock content %}
